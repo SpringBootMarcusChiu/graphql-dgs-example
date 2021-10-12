@@ -1,0 +1,20 @@
+type Query {
+    shows(titleFilter: String): [Show]
+}
+
+type Show {
+    title: String
+    releaseYear: Int
+    director: Director
+    reviews: [Review]
+}
+
+type Director {
+    name: String
+    show: Show
+}
+
+type Review {
+  description: String
+  show: Show
+}

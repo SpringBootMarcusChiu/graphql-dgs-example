@@ -1,0 +1,15 @@
+package com.marcuschiu.example.graphqldgs.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class Review {
+    private Show show;
+    private String description;
+}
