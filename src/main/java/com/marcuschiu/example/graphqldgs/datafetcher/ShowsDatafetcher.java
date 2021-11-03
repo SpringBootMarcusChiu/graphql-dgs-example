@@ -6,6 +6,7 @@ import com.marcuschiu.example.graphqldgs.model.Show;
 import com.netflix.graphql.dgs.*;
 import graphql.schema.DataFetchingEnvironment;
 import org.dataloader.DataLoader;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;

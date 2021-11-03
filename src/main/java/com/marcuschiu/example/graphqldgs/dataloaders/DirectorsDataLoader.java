@@ -13,10 +13,10 @@ import java.util.stream.Collectors;
 public class DirectorsDataLoader implements BatchLoader<String, Director> {
 
     private final List<Director> directors = List.of(
-            new Director("Marcus", null),
-            new Director("Erina", null),
-            new Director("Anna", null),
-            new Director("Eric", null)
+            Director.builder().name("Marcus").build(),
+            Director.builder().name("Erina").build(),
+            Director.builder().name("Anna").build(),
+            Director.builder().name("Eric").build()
     );
 
     @Override
